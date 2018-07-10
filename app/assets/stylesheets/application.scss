@@ -1,0 +1,70 @@
+@import 'bootstrap';
+
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-color: rgb(232, 228, 216);
+    color: rgb(34, 34, 35);
+    font-family: 'Roboto Slab', serif;
+}
+#profile-image{
+    width : 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+#hobby-image{
+    width: 320px;
+    height: 200px;
+}
+
+#name{
+    padding-top: 5rem;
+    font-family: 'Amatic SC', cursive;
+    font-size: 6rem;
+}
+.experience-box{
+    height: 220px;
+    width: 220px;
+    background-color: rgb(199, 197, 184);
+}
+
+#intropage{
+    height: 630px;
+}
+
+#hobby{
+    height: 500px;
+    background-color: rgb(224, 220, 208);
+}
+
+#experience{
+    height: 500px;
+
+}
+.kor-text{
+    //font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nanum Myeongjo', serif;
+}
+.eng-text{
+    font-family: 'Roboto Slab', serif;
+}
+
+footer{
+    border-top: solid, 1px;
+    font-size: 0.7rem;
+}
+
+#box-1{
+    background-image: url("https://i2-prod.mirror.co.uk/incoming/article1576759.ece/ALTERNATES/s615/sherlock-holmes-article-324064881.jpg");
+    background-repeat: no-repeat;
+    background-size: 220px 220px;
+    color: white;
+}
+
+#box-2{
+    background-image: url("https://www.japantimes.co.jp/wp-content/uploads/2017/01/p11-shoji-strange-a-20170119-870x579.jpg");
+    background-repeat: no-repeat;
+    background-size: 220px 220px;
+    color: white;
+}
