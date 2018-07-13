@@ -3,6 +3,7 @@
 
 ### 개발환경 설정하기
 '''
+
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
 
 brew install rbenv ruby-build
@@ -24,4 +25,5 @@ rbenv rehash
 rails -v
 
 brew install sqlite3
+
 '''
