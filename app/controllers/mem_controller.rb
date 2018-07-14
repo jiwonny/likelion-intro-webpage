@@ -1,0 +1,2 @@
+class MemController < ApplicationController
+end

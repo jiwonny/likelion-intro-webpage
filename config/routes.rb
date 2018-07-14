@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'about/about'
+
   devise_for :users
   get 'comments/create'
 
