@@ -1,22 +1,28 @@
 @import 'bootstrap';
 
+
+
 body{
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    background-color: rgb(232, 228, 216);
+    background-color: rgb(232, 228, 216);   /*배경색을 바꾸고 싶으면 이 곳을 바꾸세요*/
     color: rgb(34, 34, 35);
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif;  /*영어폰트를 바꾸고 싶으면 이 곳을 바꾸세요*/
 }
+
+/*프로필 이미지를 바꾸고 싶으면 이 곳을 바꾸세요*/
 #profile-image{
     width : 200px;
     height: 200px;
     border-radius: 100px;
 }
 
+
 #hobby-image{
     width: 320px;
     height: 200px;
 }
+
 
 #name{
     padding-top: 5rem;
@@ -42,10 +48,12 @@ body{
     height: 500px;
 
 }
+
+/*한글 폰트를 바꾸고 싶으면 이 곳을 바꾸세요*/
 .kor-text{
-    //font-family: 'Nanum Gothic', sans-serif;
     font-family: 'Nanum Myeongjo', serif;
 }
+
 .eng-text{
     font-family: 'Roboto Slab', serif;
 }
@@ -55,6 +63,8 @@ footer{
     font-size: 0.7rem;
 }
 
+
+/*경력 박스 이미지를 바꾸고 싶으면 url 안을 바꾸세요*/
 #box-1{
     background-image: url("https://i2-prod.mirror.co.uk/incoming/article1576759.ece/ALTERNATES/s615/sherlock-holmes-article-324064881.jpg");
     background-repeat: no-repeat;
