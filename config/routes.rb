@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :pratices
+  resources :members
   get 'about/about'
 
   devise_for :users

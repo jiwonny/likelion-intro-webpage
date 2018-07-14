@@ -1,2 +1,0 @@
-class MemController < ApplicationController
-end
