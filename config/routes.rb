@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'about/about'
+
   devise_for :users
   get 'comments/create'
 
@@ -14,8 +16,6 @@ Rails.application.routes.draw do
   get '/recruit' => 'home#recruit'
   get '/login' => 'home#login'
   get '/mem' => 'home#mem'
-
-  get 'home/curri'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
