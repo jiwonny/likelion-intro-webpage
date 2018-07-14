@@ -9,9 +9,34 @@
   </head>
 
   <body>
+  
     <div class = "container">
     <%= render "layouts/header" %>
     <%= yield %>
-    </div>
+    
+
+    <!--footer-->
+
+    <footer class="page-footer">
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="http://naver.com"> nextlikelion.com</a>
+      </div>
+
+      <section id="lab_social_icon_footer">
+        <div class="text-center center-block">
+          <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	        <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+	        <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+         <i class="ion-social-github" id="github-icon"> </i>
+        </div>
+      </section>
+    </footer>
+
+    
+
+  
+  <!-- Footer -->
+  </div>
   </body>
 </html>
