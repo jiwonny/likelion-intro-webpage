@@ -1,0 +1,37 @@
+<%= form_for(memonly) do |f| %>
+  <% if memonly.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(memonly.errors.count, "error") %> prohibited this memonly from being saved:</h2>
+
+      <ul>
+      <% memonly.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+
+  <div class="field">
+    <%= f.label :writer %>
+    <%= f.text_field :writer %>
+  </div>
+
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.time_select :date %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
