@@ -144,6 +144,7 @@ body {
     margin-left: 50px;
     width: 294px;
     height: 358px;
+    overflow-y: scroll;
 }
 
 .card-header_j{
@@ -171,6 +172,11 @@ body {
     background-color: white;
 }
 
+
+//-------------devise sign 용 끝----------
+
+
+//-------members introducing----
 .gisu-box{
     width : 230px;
     height: 230px;
@@ -179,6 +185,19 @@ body {
     border-color: rgb(211, 214, 222);
     color: rgb(78, 84, 121);
 }
+
+.gisu-outer-box{
+    align-items: center;
+}
+.row{
+    margin-left: 40px;
+    align-items: center;
+    padding: 20px;
+}
+
+////--------member 소개 css 끝
+
+////////////////////누구니?
 .carousel-indicators li.active {	
 	background: #555;		
 	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
@@ -204,7 +223,6 @@ body {
 	
 	.board {
 		font-size: 20px;
-	
 	}
 /*본문*/	
 table {

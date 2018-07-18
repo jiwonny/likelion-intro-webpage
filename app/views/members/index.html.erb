@@ -1,23 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 
-
 <!--order 거꾸로-->
+<div class="container">
 <div class = "gisu-outer-box d-flex flex-column justify-content-center">
-  <div class = "d-flex justify-content-center">
-    <% @members.each do |member| %>
+  <div class = "row">
+    <% @members.each do |member| %>    
       <%= link_to member do %>
-        <%= content_tag(:div, content_tag(:p, member.order, class: "text-right mr-1") + content_tag(:p, member.operator, class: "text-right mr-1"), class: "gisu-box mx-2 my-2 d-flex flex-column justify-content-end")%>
+        <%= content_tag(:div, content_tag(:p, member.order, class: "text-right mr-1"), class: "card gisu-box mx-2 my-2 d-flex flex-column justify-content-end")%>
       <% end %>
     <% end %>
   </div>
+
 </div>
-
-
-
-
-
-
 <!--관리자에게만 노출-->
 <%= link_to 'New Member', new_member_path, class: "text-center" %>
 <!---->
+</div>

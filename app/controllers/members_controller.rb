@@ -71,4 +71,5 @@ class MembersController < ApplicationController
     def member_params
       params.require(:member).permit(:order, :operator, :memeber)
     end
+
 end
