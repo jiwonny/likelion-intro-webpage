@@ -20,6 +20,14 @@ ActiveRecord::Schema.define(version: 20180717123418) do
     t.index ["memonly_id"], name: "index_comments_on_memonly_id"
   end
 
+  create_table "members", force: :cascade do |t|
+    t.integer  "order"
+    t.text     "operator"
+    t.text     "memeber"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "memonlies", force: :cascade do |t|
     t.string   "title"
     t.text     "content"

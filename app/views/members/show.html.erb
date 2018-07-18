@@ -1,0 +1,18 @@
+<p>
+  <strong>Order:</strong>
+  <%= @member.order %>
+</p>
+
+<p>
+  <strong>Operator:</strong>
+  <%= @member.operator %>
+</p>
+
+<p>
+  <strong>Memeber:</strong>
+  <%= @member.memeber %>
+</p>
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Destroy', @member, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', members_path %>
