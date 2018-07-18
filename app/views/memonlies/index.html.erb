@@ -1,33 +1,50 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+		<div class="col-md-8 col-center m-auto">
+			<div class="title_j">Members Only</div>
+</div>
+</div>
+     
+  <!--sidenav-->
+  <div class="row content">   
+    <div class="col-sm-2 sidenav">
+      <p class="board"> Members Only </p>
+      <p><a href="/posts">Notice</a></p>
+      <p><a href="/login">Board</a></p>
+    </div>
 
-<h1>Memonlies</h1>
+    <!--본문-->
+    <div class="col-sm-8 text-left"> 
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th class="title">제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+           
+          </tr>
+        </thead>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th>Writer</th>
-      <th>Date</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      <tbody>
+        <% @memonlies.each do |memonly| %>
+        <tr>
+        
+          <td><%= link_to memonly.title, memonly, class: "titletext" %></td>
+          <td><%= memonly.writer %></td>
+          <td><%= memonly.date %></td> 
+              
+          <%#<td><%= link_to '수정', edit_memonly_path(memonly) %>
+          <%#<td><%= link_to '삭제', memonly, method: :delete, data: { confirm: '정말 삭제하실래요?' } %>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-  <tbody>
-    <% @memonlies.each do |memonly| %>
-      <tr>
-        <td><%= memonly.title %></td>
-        <td><%= memonly.content %></td>
-        <td><%= memonly.writer %></td>
-        <td><%= memonly.date %></td>
-        <td><%= link_to 'Show', memonly %></td>
-        <td><%= link_to 'Edit', edit_memonly_path(memonly) %></td>
-        <td><%= link_to 'Destroy', memonly, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Memonly', new_memonly_path %>
+    <br>
+    <%= link_to '새 글쓰기', new_memonly_path %>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
