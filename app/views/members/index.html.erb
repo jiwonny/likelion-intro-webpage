@@ -5,10 +5,22 @@
 <div class="container">
 <div class = "gisu-outer-box d-flex flex-column justify-content-center">
   <div class = "row">
-    <% @members.each do |member| %>    
-      <%= link_to member do %>
-        <%= content_tag(:div, content_tag(:p, member.order, class: "text-right mr-1"), class: "card gisu-box mx-2 my-2 d-flex flex-column justify-content-end")%>
-      <% end %>
+    <% @members.each do |member| %>  
+    <figure class="snip1283">  
+      <div class="card card_m gisu-box mx-2 my-2 d-flex flex-column justify-content-end">
+          <div class="temp"><%= image_tag("slogan2.png" , class: 'img-box-m')%></div>
+          <%=link_to member do%>
+            <figcaption>
+            <p class="color-text text-right mr-1">
+              <br>
+              <br>
+              <br>
+              <%=member.order%>기      
+            </p>
+            </figcaption>
+          <%end%>
+      </div>
+    </figure>
     <% end %>
   </div>
 
@@ -17,3 +29,16 @@
 <%= link_to 'New Member', new_member_path, class: "text-center" %>
 <!---->
 </div>
+
+<script>
+  $(".hover").mouseleave(
+    function () {
+      $(".card_m").removeClass("hover");
+    }
+  );
+</script>
+
+<%#= link_to member do %>
+        <%#= content_tag
+        (:div, content_tag(:p, member.order, class: "text-right mr-1"), class: "card card_m gisu-box mx-2 my-2 d-flex flex-column justify-content-end")%>
+      <%# end %>
