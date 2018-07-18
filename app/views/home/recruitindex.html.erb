@@ -1,28 +1,12 @@
-<p class="text-center text-danger font-italic" style = "font-size:20px">멋쟁이사자처럼 고려대학교는 <br>
-여러분과 함께 새로운 도전에 닿고 싶습니다. <br> </p>
-
-<p class="text-center text-warning font-weight-bold" style = "font-size:25px"> 새로운 멋사의 가족이 되어주세요! </p> 
-
-<a href="/home/recruitindex"> 지원서 작성하기 </a>
 <br>
-<a href="/home/applyshow"> 지원서 수정하기 </a>
-
-
-<%# <a href="/home/applyshow"> 지원서 확인하기 </a> %>
-
-<%# <% @posts.each do |x|
-  <a href = "home/applyshow/<%= x.id"> 지원서 확인하기 </a>
-<% end %>
-
-<%# <br>
 <h1>멋쟁이사자처럼 고려대학교는 여러분을 두 팔 벌려 환영합니다!</h1>
 <br>
 
 <%# 사진 첨부는 어떻게? AWS? 우리 실력이 말이지 ㅜㅜ %>
 
-<%# <form action="/home/applycreate" method = "post"> %>
+<form action="/home/applycreate" method = "post">
 <%# 이거 경로 다시 한 번 더 확인 %>
-    <%# <p>개인정보</p>
+    <p>개인정보</p>
     이름 : <input type = "text" name = "name"><br>
     나이 : <input type = "text" name = "age"><br>
     전화번호 : <input type = "text" name = "phonenumber"><br>
@@ -45,7 +29,5 @@
     <br>
     <input type = "submit" value = "지원서 제출하기">
 </form>
-<br> %>
-
-
+<br>
 

@@ -4,6 +4,14 @@ Rails.application.routes.draw do
 
   get 'comments/destroy'
 
+  post 'home/recruit'
+  get 'home/recruitindex'
+  post '/home/applycreate'
+  # get '/home/applyshow/:post_id'
+  get '/home/applyshow'
+  get '/home/applyshow/1'
+  # get '/home/applyshow/:post_id' => 'home#applyshow'
+
   resources :memonlies do
     resources :comments, only: [:create, :destroy]
   end
