@@ -6,25 +6,25 @@
 <div class = "gisu-outer-box d-flex flex-column justify-content-center">
   <div class = "row">
     <% @members.each do |member| %>  
-    <figure class="snip1283">  
-      <div class="card card_m gisu-box mx-2 my-2 d-flex flex-column justify-content-end">
-          <div class="temp"><%= image_tag("slogan2.png" , class: 'img-box-m')%></div>
-          <%=link_to member do%>
-            <figcaption>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <div class="cardborder">
-                <p class="color-text text-right mr-1">
-                    <%=member.order+2012%>년 <strong>"<%=member.order%>기"</strong>
-                </p>
-              </div>      
-            </figcaption>
-          <%end%>
-      </div>
-    </figure>
+      <figure class="snip1283">  
+        <div class="card card_m gisu-box mx-2 my-2 d-flex flex-column justify-content-end">
+            <div class="temp"><%= image_tag("#{member.image}" , class: 'img-box-m')%></div>
+            <%=link_to member do%>
+              <figcaption>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="cardborder">
+                  <p class="color-text text-right mr-1">
+                      <%=member.order+2012%>년 <strong>"<%=member.order%>기"</strong>
+                  </p>
+                </div>      
+              </figcaption>
+            <%end%>
+        </div>
+      </figure>
     <% end %>
   </div>
 

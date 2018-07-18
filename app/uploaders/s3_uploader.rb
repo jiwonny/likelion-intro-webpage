@@ -24,7 +24,7 @@ class S3Uploader < CarrierWave::Uploader::Base
   # Process files as they are uploaded:
   # process scale: [200, 300]
   #
-  # def scale(width, height)
+  # def scale(width, height)  
   #   # do something
   # end
 
@@ -44,4 +44,12 @@ class S3Uploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
+
+  version :detail do
+    process resize_to_fit: [600, 10000]
+  end
+
+  version :main do
+    process resize_to_fill: [240,180]
+  end
 end
