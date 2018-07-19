@@ -30,7 +30,7 @@
         <tr>
         
           <td><%= link_to memonly.title, memonly, class: "titletext" %></td>
-          <td><%= memonly.writer %></td>
+          <td><%= memonly.user.email %></td>
           <td><%= memonly.date %></td> 
               
           <%#<td><%= link_to '수정', edit_memonly_path(memonly) %>

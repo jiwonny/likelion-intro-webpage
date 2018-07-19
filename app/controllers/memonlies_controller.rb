@@ -31,6 +31,8 @@ class MemonliesController < ApplicationController
   # POST /memonlies.json
   def create
     @memonly = Memonly.new(memonly_params)
+    @memonly.user = current_user
+    @memonly.writer = current_user.name
 
     respond_to do |format|
       if @memonly.save
@@ -75,6 +77,7 @@ class MemonliesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def memonly_params
+      params[:memonly][:writer] = current_user.name
       params.require(:memonly).permit(:title, :content, :writer, :date)
     end
 end
