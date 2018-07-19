@@ -1,18 +1,16 @@
-<p>
-  <strong>Order:</strong>
-  <%= @member.order %>
-</p>
+<div class="title_j"><%= @member.order%>기 MEMBERS</div>
+<div class="container">
+  <p>
+    <strong>운영진</strong>
+    <%= @member.operator %>
+  </p>
 
-<p>
-  <strong>Operator:</strong>
-  <%= @member.operator %>
-</p>
+  <p>
+    <strong>학회원:</strong>
+    <%= @member.memeber %>
+  </p>
 
-<p>
-  <strong>Memeber:</strong>
-  <%= @member.memeber %>
-</p>
-
-<%= link_to 'Edit', edit_member_path(@member) %> |
-<%= link_to 'Destroy', @member, method: :delete, data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Back', members_path %>
+  <%= link_to 'Edit', edit_member_path(@member) %> |
+  <%= link_to 'Destroy', @member, method: :delete, data: { confirm: 'Are you sure?' } %> |
+  <%= link_to 'Back', members_path %>
+</div>

@@ -15,7 +15,6 @@
           <div class="field">
             <%= f.label :password %>
             <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
             <% end %><br />
             <%= f.password_field :password, autocomplete: "off" %>
           </div>
@@ -37,22 +36,27 @@
         <div class="card-body">
           <div class="field">
             <%= f.label :name, '이름' %><br />
-            <%= f.text_field :name, placeholder: "ex)이지원" %>
+            <%= f.text_field :name, autofocus: true, class: 'form-control', placeholder: "ex)이지원" %>
           </div>
 
           <div class="field">
             <%= f.label :kisu, '기수(숫자만)'%><br />
-            <%= f.text_field :kisu, placeholder: "ex)6"%>
+            <%= f.text_field :kisu, autofocus: true, class: 'form-control', placeholder: "ex)6"%>
           </div>
 
           <div class="field">
             <%= f.label :studentid, '학번'%><br />
-            <%= f.text_field :studentid, placeholder: "ex)2017320214"%>
+            <%= f.text_field :studentid, autofocus: true, class: 'form-control', placeholder: "ex)2017320214"%>
+          </div>
+
+          <div class="field">
+            <%= f.label :phonenum, "전공"%><br />
+            <%= f.text_field :major,  autofocus: true, class: 'form-control', placeholder: "ex)경영학과"%>
           </div>
 
           <div class="field">
             <%= f.label :phonenum, "연락처('-' 없이)"%><br />
-            <%= f.text_field :phonenum, placeholder: "ex)01011112222"%>
+            <%= f.text_field :phonenum,  autofocus: true, class: 'form-control', placeholder: "ex)01011112222"%>
           </div>
 
         </div>

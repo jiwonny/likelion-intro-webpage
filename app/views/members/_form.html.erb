@@ -26,6 +26,12 @@
     <%= f.text_area :memeber %>
   </div>
 
+  <div class="field">
+    <%= f.label :image%>
+    <%=f.file_field :image,
+      accept: 'image/png, image/gif, image/jpeg'%>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
