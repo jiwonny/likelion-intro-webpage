@@ -10,7 +10,15 @@
     <%= @member.memeber %>
   </p>
 
-  <%= link_to 'Edit', edit_member_path(@member) %> |
-  <%= link_to 'Destroy', @member, method: :delete, data: { confirm: 'Are you sure?' } %> |
-  <%= link_to 'Back', members_path %>
 </div>
+
+	<div class="jumbotron text-light">
+		<div class="col-lg-12">
+      <p><%= link_to 'Edit', edit_member_path(@member) %> |
+      <%= link_to 'Destroy', @member, method: :delete, data: { confirm: 'Are you sure?' } %> |
+      <%= link_to 'Back', members_path %><p>
+	</div>	
+  </div>
+
+  
+	

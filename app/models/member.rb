@@ -1,3 +1,3 @@
 class Member < ApplicationRecord
-    mount_uploader :image, S3Uploader
+    #mount_uploader :image, S3Uploader
 end
